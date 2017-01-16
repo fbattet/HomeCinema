@@ -8,11 +8,11 @@ public class Amplificateur {
     private int volume;
 
     public void marche() {
-        System.out.println("Amplificateur allumé");
+        System.out.println("[Amplificateur] Amplificateur allumé");
     }
 
     public void arret() {
-        System.out.println("Amplificateur eteint");
+        System.out.println("[Amplificateur] Amplificateur eteint");
     }
 
     public void setTuner(Tuner tuner) {
@@ -20,22 +20,25 @@ public class Amplificateur {
     }
 
     public void setDvd(LecteurDvd lecteurDvd) {
+        System.out.println("[Amplificateur] Mode DVD");
         this.lecteurDvd = lecteurDvd;
     }
 
     public void setLecteurCd(LecteurCd lecteurCd) {
+        System.out.println("[Amplificateur] Mode CD");
         this.lecteurCd = lecteurCd;
     }
 
     public void setSonStereo() {
-        System.out.println("Son stéréo");
+        System.out.println("[Amplificateur] Son stéréo");
     }
 
     public void setSonSurround() {
-        System.out.println("Son surround");
+        System.out.println("[Amplificateur] Son surround");
     }
 
     public void setVolume(int volume) {
+        System.out.println("[Amplificateur] volume = " + volume);
         this.volume = volume;
     }
 }

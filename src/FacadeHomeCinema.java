@@ -39,7 +39,15 @@ public class FacadeHomeCinema {
     }
 
     public void arreterFilm() {
-
+        System.out.println("C'est la fin du film...");
+        machineAPopcorn.arret();
+        lumieres.marche();
+        ecran.monter();
+        projecteur.arret();
+        amp.arret();
+        dvd.stop();
+        dvd.ejecter();
+        dvd.arret();
     }
 
     public void ecouterCd() {
